@@ -1,0 +1,10 @@
+<div class="container">
+<h1>So you want to edit <%= @cocktail.name %>?</h1>
+<hr>
+</br>
+<%= simple_form_for [@cocktail] do |f| %>
+  <%= f.input :name %>
+  </br>
+  <%= f.submit "Submit review", class: "btn btn-primary" %>
+<% end %>
+</div>
