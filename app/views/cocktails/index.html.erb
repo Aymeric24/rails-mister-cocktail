@@ -1,21 +1,21 @@
 <div class="container">
   </br>
-<div class="float-right m-3 rounded"><%= link_to "+ New", new_cocktail_path, :class => "btn btn-danger" %></div>
   <h1>Majin Cocktail</h1>
-  <h5>All your cocktails</h5>
+  <h2>All your cocktails</h2>
   <hr>
   </br>
       <div class="card-group d-flex">
         <% @cocktails.each do |cocktail| %>
         <div class="col-9 col-sm-12 col-md-3 col-lg-3">
-          <div class="card shadow ml-3 mb-3" style="border-radius: 5px;">
-            <div class="card-body">
+          <div class="card shadow ml-3 mb-3 grow-animation" style="border-radius: 5px;">
+            <div class="card-body box-special">
               <h5 class="card-title"><%= cocktail.name %></h5>
-              <%= link_to "See More", cocktail_path(cocktail.id), :class => "btn btn-primary" %>
+              <%= link_to "See More", cocktail_path(cocktail.id), :class => "btn btn-primary rounded btn-more" %>
             </div>
           </div>
         </div>
         <% end %>
+<div class="float-right ml-5 mt-5 rounded grow-animation"><%= link_to "+ New", new_cocktail_path, :class => "btn btn-danger btn-new" %></div>
       </div>
 </div>
 

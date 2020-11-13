@@ -1,3 +1,52 @@
 // Place all the styles related to the cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+h1{
+  color: #32668a;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 15px;
+  text-shadow: -.0625rem -.0625rem 0 #6BFFFF, .0625rem .0625rem 0 #FF819E;
+
+}
+
+h2 {
+  color:#dfb888;
+  text-align: center;
+  font-size: 25px;
+  text-shadow: -.0625rem -.0625rem 0 #6BFFFF, .0625rem .0625rem 0 #FF819E;
+
+}
+h3 {
+  color: #32668a;
+  font-size:20px;
+  text-shadow: -.0625rem -.0625rem 0 #6BFFFF, .0625rem .0625rem 0 #FF819E;
+
+}
+
+p {
+  font-size:15px;
+  color:white;
+  /* text-shadow: -.0625rem -.0625rem 0 #6BFFFF, .0625rem .0625rem 0 #FF819E; */
+}
+
+ul {
+  padding:0!important;
+}
+
+img {
+  box-shadow: -1.0625rem -1.0625rem 0 #6BFFFF, 1.0625rem 1.0625rem 2 #FF819E;
+  /* height: 210px; */
+  width: 250px;
+  overflow:auto;
+  margin: 0 auto;
+  margin-left:8%;
+}
+
+img:hover{
+  /* -webkit-filter: invert(.8); */
+  /* filter: invert(.9); */
+  /* filter: drop-shadow(16px 16px 20px linear-gradient(#6BFFFF, #FF819E)); */
+  filter: drop-shadow(16px 16px 20px #7167c9);
+}

@@ -1,0 +1,46 @@
+.grow-animation {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.grow-animation:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  text-decoration: none!important;
+}
+
+.box-special{
+    background: rgba(black,.9);
+    color: white;
+    box-shadow: -.0625rem -.0625rem 0 #6BFFFF, .0625rem .0625rem 0 #FF819E;
+}
+
+.btn-more {
+  background-color:#4139a2;
+  border:1px;
+  border-color: #4139a2;
+}
+
+.btn-more:hover {
+  background-color:#db1b8b;
+  border:1px;
+  border-color: #db1b8b;
+}
+
+.btn-new {
+  background-color:#db1b8b;
+  box-shadow:3px 5px 5px black;
+  border:1px;
+  border-color: #db1b8b;
+}
+
+.btn-new:hover {
+  background-color:#4139a2;
+  border:1px;
+  border-color: #4139a2;
+}
