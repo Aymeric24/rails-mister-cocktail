@@ -4,21 +4,23 @@
   <h2>Supā Saiyajin cocktails</h2>
   <hr>
   </br>
-      <div class="card-group d-flex">
+  <span>
+      <div class="card-group">
         <% @cocktails.each do |cocktail| %>
-        <div class="col-9 col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
           <div class="card shadow m-3 grow-animation" style="border-radius: 5px;">
           <% if cocktail.photo.attached? %>
             <%= cl_image_tag cocktail.photo.key, :class => "card-img-top rounded" %>
           <% end %>
           <div class="card-body box-special rounded">
               <h5 class="card-title"><%= cocktail.name %></h5>
-              <%= link_to "View Details", cocktail_path(cocktail.id), :class => "btn btn-primary rounded btn-more" %>
+              <%= link_to "More", cocktail_path(cocktail.id), :class => "btn btn-primary rounded btn-more" %>
             </div>
           </div>
         </div>
         <% end %>
-<div class="float-right ml-5 mt-5 rounded grow-animation"><%= link_to "+ New", new_cocktail_path, :class => "btn btn-danger btn-new" %></div>
+        <div class="float-right m-5 rounded grow-animation"><%= link_to "+ New", new_cocktail_path, :class => "btn btn-danger btn-new" %></div>
       </div>
+</span>
 </div>
 
