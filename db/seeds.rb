@@ -8,21 +8,6 @@
 require 'open-uri'
 require 'json'
 
-puts 'Destroying everything'
-
-Ingredient.destroy_all
-Cocktail.destroy_all
-Dose.destroy_all
-
-puts '======'
-puts 'Creating things'
-
-Ingredient.create(name: 'lemon')
-Ingredient.create(name: 'ice')
-Ingredient.create(name: 'mint leaves')
-Cocktail.create(name: 'Vegeta')
-Cocktail.create(name: 'Gogedron')
-
 response = open('https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list').read
 ingredients = JSON.parse(response)
 
