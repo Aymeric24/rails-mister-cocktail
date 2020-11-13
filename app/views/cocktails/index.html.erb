@@ -19,7 +19,11 @@
           </div>
         </div>
         <% end %>
-        <div class="float-right m-5 rounded grow-animation"><%= link_to "+ New", new_cocktail_path, :class => "btn btn-danger btn-new" %></div>
+        <% if @cocktails.empty?%>
+          <div class="text-center rounded grow-animation"><%= link_to "+ New", new_cocktail_path, :class => "btn btn-danger btn-new" %></div>
+        <% else%>
+          <div class="float-right m-5 rounded grow-animation"><%= link_to "+ New", new_cocktail_path, :class => "btn btn-danger btn-new" %></div>
+        <% end %>
       </div>
 </span>
 </div>
