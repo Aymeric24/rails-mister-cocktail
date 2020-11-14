@@ -9,7 +9,7 @@
       </br>
       <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center"><h3> Of </h3></div>
       </br>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center"><%= f.association :ingredient %></div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center"><%= f.association :ingredient, :label => "Ingredient" %></div>
       </br>
       <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center"><%= f.submit "Submit Dose", class: "btn btn-primary btn-new" %></div>
     <% end %>
