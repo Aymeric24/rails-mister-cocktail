@@ -3,11 +3,12 @@
   <h1>Here you can create a new Dose</h1>
 <hr>
 </br>
-    <%= simple_form_for [@cocktail, @dose], :html=> { class: 'simple-forms box-special p-4' } do |f| %>
+  <div class="container">
+    <%= simple_form_for [@cocktail, @dose], :html=> { class: 'simple-forms box-special p-4 d-flex justify-content-between' } do |f| %>
       <%= f.input :description, :label =>"Quantity (ex: 6cl)" %>
-      </br>
+      <h3> Of </h3>
       <%= f.association :ingredient %>
-      </br>
       <%= f.submit "Submit Dose", class: "btn btn-primary btn-new" %>
     <% end %>
+  </div>
 </div>
