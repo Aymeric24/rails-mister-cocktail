@@ -1,6 +1,14 @@
+nav {
+  overflow: hidden;
+  position: fixed;
+}
+
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: rgba($color: black, $alpha: 0.6);
+    &a {
+    color:white!important;
+  }
 }
 
 .navbar-lewagon .navbar-collapse {
