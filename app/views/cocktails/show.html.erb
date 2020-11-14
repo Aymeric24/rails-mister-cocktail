@@ -15,11 +15,11 @@
             <%= cl_image_tag @cocktail.photo.key, :class => "card-img-top rounded box-special box-special-show" %>
           <% end %>
       <div class="col-12 card mt-3 shadow box-special" style="width: 50rem;">
-        <div class="card-body">
+        <div class="card-body rounded">
           <% @doses.each do |dose|%>
             <p><%= dose.description %> of <%= dose.ingredient.name %> -  <%= link_to "", dose_path(dose), method: :delete, data: { confirm: 'Are you sure?'}, :class => "far fa-trash-alt" %></p>
-            </br>
           <% end %>
+            </br>
           <%= link_to "+ Add Doses", new_cocktail_dose_path(@cocktail), :class => "btn btn-primary rounded btn-more" %>
         </div>
       </div>
